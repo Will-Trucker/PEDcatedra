@@ -53,6 +53,30 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormEpresas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEpresas.Designer.cs">
+      <DependentUpon>FormEpresas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProyectos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormProyectos.Designer.cs">
+      <DependentUpon>FormProyectos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormTareas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTareas.Designer.cs">
+      <DependentUpon>FormTareas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuarios.Designer.cs">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormUsuariosProyectos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +85,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormEpresas.resx">
+      <DependentUpon>FormEpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProyectos.resx">
+      <DependentUpon>FormProyectos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormTareas.resx">
+      <DependentUpon>FormTareas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuarios.resx">
+      <DependentUpon>FormUsuarios.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormUsuariosProyectos.resx">
       <DependentUpon>FormUsuariosProyectos.cs</DependentUpon>
     </EmbeddedResource>
