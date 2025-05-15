@@ -862,6 +862,29 @@ namespace PEDcatedra
 
 
 
+        /** Lista para tareas **/
+        public Dictionary<int, string> ListaTareas()
+        {
+            Dictionary<int, string> tareas = new Dictionary<int, string>();
+            using (SqlConnection con = new SqlConnection(connectionString))
+            {
+                con.Open();
+                SqlCommand cmd = new SqlCommand("SELECT id, nombre FROM tareas", con);
+                SqlDataReader reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    tareas.Add((int)reader["id"], reader["nombre"].ToString());
+                }
+            }
+            return tareas;
+        }
+
+
+
+
+
+
+
 
 
 
