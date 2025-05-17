@@ -49,6 +49,7 @@
             this.dtFin = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.comboEmpresa = new System.Windows.Forms.ComboBox();
+            this.btnGenerarDiagrama = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -101,13 +102,13 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(243, 270);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(545, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(565, 150);
             this.dataGridView1.TabIndex = 9;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
             // btnAgregar
             // 
-            this.btnAgregar.Location = new System.Drawing.Point(421, 202);
+            this.btnAgregar.Location = new System.Drawing.Point(344, 202);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(75, 23);
             this.btnAgregar.TabIndex = 10;
@@ -117,7 +118,7 @@
             // 
             // btnActualizar
             // 
-            this.btnActualizar.Location = new System.Drawing.Point(520, 202);
+            this.btnActualizar.Location = new System.Drawing.Point(462, 202);
             this.btnActualizar.Name = "btnActualizar";
             this.btnActualizar.Size = new System.Drawing.Size(75, 23);
             this.btnActualizar.TabIndex = 11;
@@ -127,7 +128,7 @@
             // 
             // btnEliminar
             // 
-            this.btnEliminar.Location = new System.Drawing.Point(628, 202);
+            this.btnEliminar.Location = new System.Drawing.Point(586, 202);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(75, 23);
             this.btnEliminar.TabIndex = 12;
@@ -233,11 +234,21 @@
             this.comboEmpresa.Size = new System.Drawing.Size(121, 21);
             this.comboEmpresa.TabIndex = 24;
             // 
+            // btnGenerarDiagrama
+            // 
+            this.btnGenerarDiagrama.Location = new System.Drawing.Point(695, 201);
+            this.btnGenerarDiagrama.Name = "btnGenerarDiagrama";
+            this.btnGenerarDiagrama.Size = new System.Drawing.Size(113, 24);
+            this.btnGenerarDiagrama.TabIndex = 25;
+            this.btnGenerarDiagrama.Text = "Generar Diagrama";
+            this.btnGenerarDiagrama.UseVisualStyleBackColor = true;
+            // 
             // FormTareas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(820, 450);
+            this.Controls.Add(this.btnGenerarDiagrama);
             this.Controls.Add(this.comboEmpresa);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.dtFin);
@@ -290,5 +301,6 @@
         private System.Windows.Forms.DateTimePicker dtFin;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox comboEmpresa;
+        private System.Windows.Forms.Button btnGenerarDiagrama;
     }
 }

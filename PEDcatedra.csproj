@@ -65,6 +65,12 @@
     <Compile Include="FormEpresas.Designer.cs">
       <DependentUpon>FormEpresas.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPanel.Designer.cs">
+      <DependentUpon>FormPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormProyectos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,6 +102,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormEpresas.resx">
       <DependentUpon>FormEpresas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPanel.resx">
+      <DependentUpon>FormPanel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormProyectos.resx">
       <DependentUpon>FormProyectos.cs</DependentUpon>
