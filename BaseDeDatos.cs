@@ -12,7 +12,7 @@ namespace PEDcatedra
 {
     class BaseDeDatos
     {
-        private string connectionString = "Server=SW;Database=catedra_ped;Integrated Security=True;";
+        private string connectionString = "Server=LAPTOP-KOB6KVS1;Database=catedra_ped;Integrated Security=True;";
         private SqlConnection connection;
 
         //modifica estos metodos c# para adaptarlo a la tabla empresas que tiene los campos id,nombre,descripcion,idUsuario

@@ -1,4 +1,4 @@
-﻿namespace CRUD
+﻿namespace PEDcatedra
 {
     partial class FormUsuarios
     {

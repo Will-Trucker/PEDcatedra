@@ -38,7 +38,7 @@ namespace PEDcatedra
 
        private void CargarRelaciones()
         {
-            dataGridViewRelaciones.DataSource = bd.MostarDependencias();
+            //dataGridViewRelaciones.DataSource = bd.MostarDependencias();
         }
 
         private void btnAgregarD_Click(object sender, EventArgs e)
@@ -52,18 +52,17 @@ namespace PEDcatedra
                 return;
             }
 
-            if (bd.ExistDependencia(tareaId, preId)) {
+            //if (bd.ExistDependencia(tareaId, preId)) {
                 MessageBox.Show("La relacion ya existe");
                 return;
-            }
+            //}
 
-            if (bd.GenerarCiclo(tareaId, preId))
-            {
+            //if (bd.GenerarCiclo(tareaId, preId)) {
                 MessageBox.Show("Relacion No Valida"); // La relacion genera un ciclo en el grafo. No es apta para el diagrama pert
                 return;
-            }
+            //}
 
-            bd.AgregarDependencia(tareaId,preId);
+            //bd.AgregarDependencia(tareaId,preId);
             CargarRelaciones();
         }
 
@@ -72,7 +71,7 @@ namespace PEDcatedra
             if(dataGridViewRelaciones.CurrentRow != null)
             {
                 int id = (int)dataGridViewRelaciones.CurrentRow.Cells["id"].Value;
-                bd.EliminarDependencia(id);
+                //bd.EliminarDependencia(id);
                 CargarRelaciones();
             }
         }
